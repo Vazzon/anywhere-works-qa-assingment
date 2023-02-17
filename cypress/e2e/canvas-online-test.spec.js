@@ -13,9 +13,10 @@ describe('HTML Canvas Studio', () => {
   });
 
   it('should allow to draw cross and rectangle by functions', () => {
-    CanvasOnlinePage.drawLine(width / 2, 20, width / 2, width / 4);
-    CanvasOnlinePage.drawLine(width / 2 - 50, 75, width / 2 + 50, 75);
-    CanvasOnlinePage.drawRectangle(
+    CanvasOnlinePage.drawShape('line', width / 2, 20, width / 2, width / 4);
+    CanvasOnlinePage.drawShape('line', width / 2 - 50, 75, width / 2 + 50, 75);
+    CanvasOnlinePage.drawShape(
+      'rectangle',
       width / 2 - 75,
       height / 2 + 25,
       width / 2 + 75,
@@ -24,9 +25,9 @@ describe('HTML Canvas Studio', () => {
     CanvasOnlinePage.useEraser(width / 2, 20, width / 2, width / 4);
   });
   it('should allow to draw cross and rectangle by commands', () => {
-    cy.drawLine(width / 2, 20, width / 2, width / 4);
-    cy.drawLine(width / 2 - 50, 75, width / 2 + 50, 75);
-    cy.drawRectangle(width / 2 - 75, height / 2 + 25, width / 2 + 75, height / 2 + 100);
+    cy.drawShape('line', width / 2, 20, width / 2, width / 4);
+    cy.drawShape('line', width / 2 - 50, 75, width / 2 + 50, 75);
+    cy.drawShape('rectangle', width / 2 - 75, height / 2 + 25, width / 2 + 75, height / 2 + 100);
     cy.useEraser(width / 2, 20, width / 2, width / 4);
   });
 });
