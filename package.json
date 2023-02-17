@@ -1,0 +1,33 @@
+{
+  "name": "anywhere-works-qa-assingment",
+  "version": "1.0.0",
+  "description": "Anywhere Works QA assingment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vazzon/anywhere-works-qa-assingment.git"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "anywhereworks",
+    "cypress",
+    "homeassignment",
+    "home",
+    "assingment"
+  ],
+  "author": "Sebastian Zajec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vazzon/anywhere-works-qa-assingment/issues"
+  },
+  "homepage": "https://github.com/Vazzon/anywhere-works-qa-assingment#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1"
+  }
+}
